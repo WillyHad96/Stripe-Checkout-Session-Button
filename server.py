@@ -10,7 +10,7 @@ from flask import Flask, render_template, redirect, request, url_for
 
 import stripe
 # This is your test secret API key.
-stripe.api_key = 'sk_test_51ONgZlK2btjRP0oVdy5O9QMe9PeKY7w7mahXZAIeR3tY4Jz3kBwnQlETwzE4Sf4T39CiVuLh4jmYnzimuUTnn65J00tbWi2JGw'
+stripe.api_key = 'sk_test_xyz'
 
 app = Flask(__name__,
             static_url_path='',
@@ -36,7 +36,7 @@ def create_checkout_session():
             line_items=[
                 {
                     # Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-                    'price': 'price_1ONgd7K2btjRP0oV1eArr2fD',
+                    'price': 'price_xyz',
                     'quantity': 1,
                 },
             ],
